@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manual Mode Switch Helper</title>
+</head>
+<body>
+    <div id="display">MODE SWITCH</div>
+    <div id="timer"></div>
+    <div id="control">
+        <label for="preparar">PREPARAR</label>
+        <input type="number" name="preparar" id="preparar" value="5" min="5" max="60"/>
+        <label for="intervalo">Intervalo</label>
+        <input type="number" name="intervalo" id="intervalo" value="10" min="30" max="180"/>
+        <label for="vezes">Vezes</label>
+        <input type="number" name="vezes" id="vezes" value="2" min="1" max="3"/>
+        <button id="start" onclick="start()">START</button>
+        <button id="reset" onclick="reset()">RESET</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
